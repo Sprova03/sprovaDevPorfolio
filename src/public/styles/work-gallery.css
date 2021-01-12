@@ -1,0 +1,186 @@
+.work-section {
+  /* background-image: url(/images/work.jpg); */
+  background-image: url(/images/miwork.jpeg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.work-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-title {
+  height: 80px;
+  padding-top: 20px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(61, 60, 60);
+}
+
+.work-container {
+  border-radius: 4px;
+  margin: 30px;
+  width: 70%;
+  background-color: rgb(33, 92, 100);
+}
+.img-cover {
+  position: relative;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 550px;
+  height: 550px;
+  margin: 30px;
+  background-color: rgb(222, 224, 223);
+  border: solid rgb(33, 92, 100) 3px;
+}
+
+.card-work {
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 69%, 0 49%);
+  background-color: rgb(33, 92, 100);
+}
+
+.img {
+  height: 100%;
+}
+.natours {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.work-container-title {
+  height: 100%;
+  width: 90%;
+}
+.work-card-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 150px;
+  position: absolute;
+  top: 382px;
+  left: 25px;
+  color: rgb(0, 0, 0);
+  padding: 13px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px rgb(104, 104, 104);
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.work-card-a:hover {
+  border: 2px solid white;
+  box-shadow: 10px 10px 5px rgb(128, 128, 128),
+    inset -10px -10px 5px rgba(228, 226, 226, 0.719),
+    inset 10px 10px 5px rgba(148, 147, 147, 0.74);
+}
+
+.slider {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(0, 0, 0, 0.575);
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+@media screen and (max-width: 764px) {
+  .work-section {
+    /* background-image: url(/images/work.jpg); */
+    background-image: url(/images/miwork.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .work-box {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .img-cover {
+    position: relative;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    background-color: rgb(222, 224, 223);
+  }
+  .work-card-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    top: 242px;
+    left: 25px;
+    color: rgb(0, 0, 0);
+    padding: 13px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgb(104, 104, 104);
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    border: none;
+    background: rgba(0, 0, 0, 0.575);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+  }
+}
